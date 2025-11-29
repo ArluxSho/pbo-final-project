@@ -11,17 +11,22 @@ public class Task {
         this.isCompleted = new SimpleBooleanProperty(false);
     }
 
-    // Getters for properties (Wajib untuk JavaFX Binding)
+    // --- BAGIAN INI PUNYA KAMU (JANGAN DIHAPUS) ---
     public StringProperty titleProperty() { return title; }
     public BooleanProperty isCompletedProperty() { return isCompleted; }
 
-    // Standard getters
     public String getTitle() { return title.get(); }
     public boolean isCompleted() { return isCompleted.get(); }
     
-    // Agar saat masuk ListView yang muncul namanya, bukan alamat memori
     @Override
     public String toString() {
         return getTitle(); 
     }
+
+    // --- AKU TAMBAHKAN SETTER DI SINI (PERLU BUAT INTERAKSI) ---
+    // Supaya bisa ganti nama tugas kalau mau edit
+    public void setTitle(String title) { this.title.set(title); }
+    
+    // Supaya checkbox bisa mengubah status true/false
+    public void setCompleted(boolean completed) { this.isCompleted.set(completed); }
 }
