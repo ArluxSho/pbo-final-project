@@ -1,0 +1,123 @@
+/*Global*/
+.root {
+    -fx-font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.label, .button, .text-field, .combo-box {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0.1, 0, 1);
+}
+
+/* Glow khusus untuk judul besar */
+.title-glow {
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.7), 20, 0.2, 0, 0);
+}
+
+/*card*/
+.card {
+    -fx-background-color: #ffffff(255, 255, 255, 0.85);
+    -fx-background-radius: 15;
+    -fx-padding: 20;
+
+    /* soft shadow pastel */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 20, 0.1, 0, 4);
+}
+
+/*tombol*/
+.button {
+    -fx-font-weight: bold;
+    -fx-background-radius: 18;
+    -fx-cursor: hand;
+    -fx-padding: 10 20;
+    -fx-background-insets: 0;
+}
+
+/*hover*/
+.button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(206, 253, 250, 0.788), 15, 0.2, 0, 0);
+    -fx-opacity: 2;
+}
+
+/*primary*/
+.button-primary {
+    -fx-background-color: #2980b9;
+    -fx-text-fill: white;
+}
+.button-primary:hover {
+    -fx-background-color: #3498db;
+}
+
+/*success*/
+.button-success {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+}
+.button-success:hover {
+    -fx-background-color: #2ecc71;
+}
+
+/*warning*/
+.button-warning {
+    -fx-background-color: #f39c12;
+    -fx-text-fill: white;
+}
+
+/*danger*/
+.button-danger {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+}
+
+/*shop buttons*/
+.button-outline-white {
+    -fx-background-color: rgba(255,255,255,0.2);
+    -fx-background-radius: 20;
+    -fx-border-color: white;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 20;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0, 0, 0);
+}
+.button-outline-white:hover {
+    -fx-background-color: rgba(255,255,255,0.1);
+}
+
+/*input*/
+.text-field, .combo-box {
+    -fx-background-color: rgba(255,255,255,0.85);
+    -fx-padding: 8;
+    -fx-background-radius: 10;
+    -fx-border-color: #dcdfe1;
+    -fx-border-radius: 10;
+}
+
+/*hud*/
+.hud-box {
+    -fx-background-color: rgba(255,255,255,0.25);
+    -fx-background-radius: 20;
+    -fx-padding: 6 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 12, 0.15, 0, 3);
+}
+
+/*timer label*/
+.timer-text {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 25, 0.3, 0, 0);
+}
+
+/*title in timer*/
+.big-title {
+    -fx-font-size: 50;
+    -fx-text-fill: #61b0ffff;
+    -fx-effect: dropshadow(gaussian, white, 20, 0.5, 0, 0);
+    -fx-stroke: #61b0ff;
+    -fx-stroke-width: 2px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Poppins SemiBold";
+}
+
+/*title label*/
+.title {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
