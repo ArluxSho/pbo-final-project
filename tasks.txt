@@ -1,4 +1,0 @@
-PBO LAPORAN|true
-BASDEATH|true
-PRAK KP|true
-PRAK METNUM|true
