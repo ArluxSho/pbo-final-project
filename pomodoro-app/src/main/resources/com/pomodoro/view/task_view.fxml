@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="com.pomodoro.controller.MainController"
+      spacing="20" style="-fx-padding: 40; -fx-background-color: #eef5f9;">
+
+    <Label text="Setup Focus" textFill="#2c3e50" styleClass="title"/>
+
+    <!--pilih waktu-->
+    <VBox spacing="10" styleClass="card">
+        <Label text="1. Select Duration" textFill="#7f8c8d"/>
+        <ComboBox fx:id="durationSelector" promptText="25 Minutes (Default)" prefWidth="300"/>
+    </VBox>
+
+    <!--daftar tugas-->
+    <VBox spacing="10" VBox.vgrow="ALWAYS" styleClass="card">
+        <Label text="2. Tasks List" textFill="#7f8c8d"/>
+        
+        <HBox spacing="10">
+            <TextField fx:id="inputTask" promptText="Enter task here..." HBox.hgrow="ALWAYS"/>
+            <Button text="Add" onAction="#handleAddTask" styleClass="button-success"/>
+        </HBox>
+        
+        <ListView fx:id="taskListView" VBox.vgrow="ALWAYS" style="-fx-background-color: transparent;"/>
+        
+        <Label text="*Click a task to select it" textFill="#e74c3c">
+             <font><Font size="12"/></font>
+        </Label>
+        
+        <Button text="Delete Selected" onAction="#handleDeleteTask" styleClass="button-danger"/>
+    </VBox>
+
+    <!--tombol selanjutnya-->
+    <Button text="GO TO TIMER ->" onAction="#goToTimerPage"
+            maxWidth="Infinity" prefHeight="50"
+            styleClass="button button-primary"/>
+</VBox>
