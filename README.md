@@ -69,7 +69,7 @@ This project is built using Object-Oriented Programming (OOP) principles with a 
 * **Aisyah Nurul S      L0124085**
 * **Calista Salsabila   L0124092** 
 
-## Contributors
+## Makalah dan Slide Presentasi
 
 Untuk presentasi dan makalah mengenai program dapat diakses ke [link berikut.](https://drive.google.com/drive/folders/1qfptRT3w1opF7VI1podTc4G5sl7aJ2ff?usp=sharing)
 
